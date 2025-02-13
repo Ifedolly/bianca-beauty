@@ -1,0 +1,66 @@
+.navbar{
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar:hover{
+    background-color: #fff3fa;
+}
+
+.navbar.scrolled{
+    background-color: #fff3fa;
+    box-shadow: #7a042a;
+}
+@font-face {
+    font-family: 'Gruppo';
+    src: url('../assets/fonts/Gruppo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 20px;  
+    color: #b44a60;    
+    font-weight: 600;  
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li{
+    padding: 10px;
+}
+
+.nav-links a{
+    color: #7a042a;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover{
+    background-color: #fcc7d1;
+    box-shadow: 0px 4px 10px #201718;
+}
+
+.nav-links .active{
+    background-color: #fcc7d1;
+    box-shadow: 0px 4px 10px #201718;
+    color: #7a042a;
+    opacity: 0.9;
+    /* text-decoration: underline; */
+}

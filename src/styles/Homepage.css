@@ -1,0 +1,29 @@
+
+.homepage {
+    background-image: url('/images/background-1.jpg');  
+    background-size: contain;  
+    background-position: center;  
+    background-attachment: fixed;  
+    min-height: 100vh;  
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    color: white;  
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);  /* Dark overlay for better text visibility */
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-family: 'Urbanist', sans-serif;  /* Replace with your chosen font */
+  }
+  
+  p {
+    font-size: 25px;
+    font-family: 'Urbanist', sans-serif;  /* Replace with your chosen font */
+  }
