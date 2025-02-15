@@ -114,57 +114,35 @@ const productsData = [
   },
   {
     id: 11,
-    name: "Shadesync Powder Palette",
+    name: "Compressed Powder",
     category: "Skin",
-    description: "A 4-shade powder palette for a smooth, flawless match across skin tones",
+    description: "Different powder shades for a smooth, flawless match across skin tones",
     price: "$28",
     images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
+      default:"/images/powder.jpg",
+      hover: "/images/powder-hover.jpg",
     },
   },
   {
     id: 14,
-    name: "Rosy Pink Blush",
+    name: "Blush Palette",
     category: "Skin",
-    description: "A classic pink for a natural, youthful look",
-    price: "$15",
+    description: "A classic palette for a natural, youthful look",
+    price: "$20",
     images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
+      default:"/images/blush-palette.jpg",
+      hover: "/images/blush-cheek.jpg",
     },
-  },
-  {
-    id: 15,
-    name: "Plum Wine Blush",
-    category: "Skin",
-    description: "A rich berry hue for a bold, radiant finish",
-    price: "$15",
-    images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
-    },
-  },
-  {
-    id: 16,
-    name: "Soft Peach Blush",
-    category: "Skin",
-    description: "A warm, delicate flush for a fresh glow",
-    price: "$15",
-    images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
-    },
-  },
+  }, 
   {
     id: 17,
-    name: "Aqua Veil Moisturiser",
+    name: "Moisturiser",
     category: "Skin",
     description: "A refreshing burst of deep hydration",
     price: "$25",
     images: {
       default:"/images/moisturiser.jpg",
-      hover: "/images/moisturiser-girl.jpg",
+      hover: "/images/moisturiser-hover.jpg",
     },
   },
   {
@@ -174,8 +152,8 @@ const productsData = [
     description: "Gently melts away dirt, oil, and makeup",
     price: "$22",
     images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
+      default:"/images/cleanser-tube.jpg",
+      hover: "/images/cleanser-tube-hover.jpg",
     },
   },
   {
@@ -185,8 +163,8 @@ const productsData = [
     description: "Restores, hydrates, and preps your skin",
     price: "$22",
     images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
+      default:"/images/toner-bottle.jpg",
+      hover: "/images/toner-bottle-hover.jpg",
     },
   },
   {
@@ -196,8 +174,8 @@ const productsData = [
     description: "A potent boost of hydration and nourishment",
     price: "$22",
     images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
+      default:"/images/serum-bottle.jpg",
+      hover: "/images/serum-bottle-hover.jpg",
     },
   },
   {
@@ -207,8 +185,8 @@ const productsData = [
     description: "Smooth, matte warmth for a soft, sculpted effect",
     price: "$18",
     images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
+      default:"/images/bronzer.jpg",
+      hover: "/images/bronzer-hover.jpg",
     },
   },
   {
@@ -218,8 +196,8 @@ const productsData = [
     description: "Ultra-smooth, voluminous lashes with a velvety, weightless finish",
     price: "$10",
     images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
+      default:"images/mascara.jpg",
+      hover: "images/mascara-hover.jpg",
     },
   },
   {
@@ -229,8 +207,8 @@ const productsData = [
     description: "Intense black with a flawless wing every time",
     price: "$15",
     images: {
-      default:"/images/nude-lipliner.jpg",
-      hover: "/images/nude-linerlip.jpg",
+      default:"/images/eyeliner.jpg",
+      hover: "/images/eyeliner-hover.jpg",
     },
   },
   {
