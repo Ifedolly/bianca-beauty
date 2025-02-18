@@ -1,5 +1,90 @@
 .products-page {
-    padding-top: 80px; /* Adjust based on your Navbar height */
+    text-align: center;
+    padding: 4rem;
+    min-height: 100vh;
+    color: #7a042a;
+    background-color: #f7e6d6;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3.5rem auto;
+    min-height: 60vh;  
+    align-items: center;
+}
+
+.category-box {
+    position: relative; 
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.category-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #7a042a;
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.3s ease; /* Fade-in effect */
+}
+
+.category-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.category-box:hover .category-text {
+    opacity: 1; /* Show text on hover */
+}
+  
+.category-box:hover .category-image {
+    opacity: 0.2; 
+}
+
+.back-button-container {
+    text-align: left;
+    margin: 1.5rem;
+}
+
+.back-button {
+    background-color: #be5c71 ;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .9rem;
+    transition: background-color 0.3s ease;
+}
+  
+.back-button:hover {
+    background-color: #8f4151;
+}
+  
+  
+@media (max-width: 768px) {
+    .categories-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
 }
 
 .products-grid{
@@ -10,6 +95,9 @@
     justify-content: center;
 }
 
+.product-list h2{
+    font-size: 25px;
+}
 .product-card {
     background: #fff; /* White background for the cards */
     padding: 15px;
@@ -39,3 +127,19 @@
     font-size: 14px;
     color: #555;
 } 
+
+.add-to-cart-button{
+    background-color: #be5c71;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .8rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #8f4151;
+}
