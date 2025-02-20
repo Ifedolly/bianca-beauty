@@ -8,7 +8,7 @@ export const productsData = [
       price: "$15",
       images: {
         default:"/images/red-lipstick.jpg",
-        hover: "/images/red-lip.jpg",
+        hover: "/images/red-lipstick-hover.jpg",
       },
     },
     {
@@ -19,7 +19,7 @@ export const productsData = [
       price: "$15",
       images: {
         default:"/images/pink-lipstick.jpg",
-        hover: "/images/pink-lip.jpg",
+        hover: "/images/pink-lipstick-hover.jpg",
       },
     },
     {
@@ -30,7 +30,7 @@ export const productsData = [
       price: "$15",
       images: {
         default:"/images/nude-lipstick.jpg",
-        hover: "/images/nude-lip.jpg",
+        hover: "/images/nude-lipstick-hover.jpg",
       },
     },
     {
@@ -41,7 +41,7 @@ export const productsData = [
       price: "$12",
       images: {
         default:"/images/pink-lipgloss.jpg",
-        hover: "/images/pink-glosslip.jpg",
+        hover: "/images/pink-lipgloss-hover.jpg",
       },
     },
     {
@@ -52,7 +52,7 @@ export const productsData = [
       price: "$12",
       images: {
         default:"/images/nude-lipgloss.jpg",
-        hover: "/images/nude-glosslip.jpg",
+        hover: "/images/nude-lipgloss-hover.jpg",
       },
     },
     {
@@ -63,7 +63,7 @@ export const productsData = [
       price: "$10",
       images: {
         default:"/images/pink-lipliner.jpg",
-        hover: "/images/pink-linerlip.jpg",
+        hover: "/images/pink-lipliner-hover.jpg",
       },
     },
     {
@@ -74,66 +74,46 @@ export const productsData = [
       price: "$10",
       images: {
         default:"/images/nude-lipliner.jpg",
-        hover: "/images/nude-linerlip.jpg",
+        hover: "/images/nude-lipliner-hover.jpg",
       },
     },
     {
       id: 8,
-      name: "Caramel Foundation",
+      name: "Mistique Toner",
       category: "Skin",
-      description: "A rich, warm hue that melts into the skin effortlessly",
-      price: "$18",
+      description: "Restores, hydrates, and preps your skin",
+      price: "$22",
       images: {
-        default:"/images/caramel-foundation.jpg",
-        hover: "/images/nude-linerlip.jpg",
+        default:"/images/toner-bottle.jpg",
+        hover: "/images/toner-bottle-hover.jpg",
       },
+      
     },
     {
       id: 9,
-      name: "Mocha Foundation",
+      name: "LumiDew Serum",
       category: "Skin",
-      description: "A deep, velvety brown for a flawless, sculpted finish",
-      price: "$18",
+      description: "A potent boost of hydration and nourishment",
+      price: "$22",
       images: {
-        default:"/images/mocha-foundation.jpg",
-        hover: "/images/nude-linerlip.jpg",
+        default:"/images/serum-bottle.jpg",
+        hover: "/images/serum-bottle-hover.jpg",
       },
     },
     {
       id: 10,
-      name: "Caramel Powder",
+      name: "PureMelt Cleanser",
       category: "Skin",
-      description: "A warm, golden-toned powder for a smooth finish",
-      price: "$25",
+      description: "Gently melts away dirt, oil, and makeup",
+      price: "$22",
       images: {
-        default:"/images/caramel-powder.jpg",
-        hover: "/images/powder-hover.jpg",
+        default:"/images/cleanser-tube.jpg",
+        hover: "/images/cleanser-tube-hover.jpg",
       },
+      
     },
     {
       id: 11,
-      name: "Mocha Powder",
-      category: "Skin",
-      description: "A rich, deep brown powder for flawless, velvety coverage",
-      price: "$25",
-      images: {
-        default:"/images/mocha-powder.jpg",
-        hover: "/images/powder-hover.jpg",
-      },
-    },
-    {
-      id: 12,
-      name: "Blush Palette",
-      category: "Skin",
-      description: "A classic palette for a natural, youthful look",
-      price: "$20",
-      images: {
-        default:"/images/blush-palette.jpg",
-        hover: "/images/blush-cheek.jpg",
-      },
-    }, 
-    {
-      id: 13,
       name: "Moisturiser",
       category: "Skin",
       description: "A refreshing burst of deep hydration",
@@ -144,36 +124,58 @@ export const productsData = [
       },
     },
     {
-      id: 14,
-      name: "PureMelt Cleanser",
+      id: 12,
+      name: "Blush Palette",
       category: "Skin",
-      description: "Gently melts away dirt, oil, and makeup",
-      price: "$22",
+      description: "A classic palette for a natural, youthful look",
+      price: "$20",
       images: {
-        default:"/images/cleanser-tube.jpg",
-        hover: "/images/cleanser-tube-hover.jpg",
+        default:"/images/blush-palette.jpg",
+        hover: "/images/blush-palette-hover.jpg",
+      },
+    }, 
+    {
+      id: 13,
+      name: "Caramel Powder",
+      category: "Skin",
+      description: "A warm, golden-toned powder for a smooth finish",
+      price: "$25",
+      images: {
+        default:"/images/caramel-powder.jpg",
+        hover: "/images/powder-hover.jpg",
+      },
+    },
+    {
+      id: 14,
+      name: "Mocha Powder",
+      category: "Skin",
+      description: "A rich, deep brown powder for flawless, velvety coverage",
+      price: "$25",
+      images: {
+        default:"/images/mocha-powder.jpg",
+        hover: "/images/powder-hover.jpg",
       },
     },
     {
       id: 15,
-      name: "Mistique Toner",
+      name: "Caramel Foundation",
       category: "Skin",
-      description: "Restores, hydrates, and preps your skin",
-      price: "$22",
+      description: "A rich, warm hue that melts into the skin effortlessly",
+      price: "$18",
       images: {
-        default:"/images/toner-bottle.jpg",
-        hover: "/images/toner-bottle-hover.jpg",
+        default:"/images/caramel-foundation.jpg",
+        hover: "/images/nude-linerlip.jpg",
       },
     },
     {
       id: 16,
-      name: "LumiDew Serum",
+      name: "Mocha Foundation",
       category: "Skin",
-      description: "A potent boost of hydration and nourishment",
-      price: "$22",
+      description: "A deep, velvety brown for a flawless, sculpted finish",
+      price: "$18",
       images: {
-        default:"/images/serum-bottle.jpg",
-        hover: "/images/serum-bottle-hover.jpg",
+        default:"/images/mocha-foundation.jpg",
+        hover: "/images/nude-linerlip.jpg",
       },
     },
     {
@@ -203,7 +205,7 @@ export const productsData = [
       name: "Noir Flick Eyeliner",
       category: "Eyes",
       description: "Intense black with a flawless wing every time",
-      price: "$15",
+      price: "$10",
       images: {
         default:"/images/eyeliner.jpg",
         hover: "/images/eyeliner-hover.jpg",

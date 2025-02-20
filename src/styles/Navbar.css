@@ -12,11 +12,11 @@
 }
 
 .navbar:hover{
-    background-color: #fff3fa;
+    background-color: #fdfdfd;
 }
 
 .navbar.scrolled{
-    background-color: #fff3fa;
+    background-color: #fdfdfd;
     box-shadow: #7a042a;
 }
 @font-face {
@@ -30,13 +30,17 @@
     font-family: 'Gruppo', sans-serif;
     font-size: 20px;  
     color: #b44a60;    
-    font-weight: 600;  
+    font-weight: 600;
 }
 
 .nav-links{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    gap: 20px;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-20%);
 }
 
 .nav-links li{
