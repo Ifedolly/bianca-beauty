@@ -7,6 +7,16 @@ const featuredProducts = productsData.filter(product =>
 );
 
 const Homepage = () => {
+
+  const scrollGallery = (direction) => {
+    const gallery = document.querySelector('.image-gallery');
+    if (direction === 'left') {
+      gallery.scrollBy({ left: -200, behavior: 'smooth' });
+    } else {
+      gallery.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };  
+
   return (
     <div className="homepage">
                   {/* Hero Section */}
@@ -18,17 +28,35 @@ const Homepage = () => {
         </div>
       </section>
       {/* Featured Products Section */}
-      <section className="featured-products">
+      <section className="bestsellers">
         <h2>Bestsellers</h2>
-        <div className="products-container">
+        <div className="bestsellers-container">
           {featuredProducts.map((product) => (
-            <div key={product.id} className="product-card">
+            <div key={product.id} className="bestsellers-card">
               <img src={product.images.default} alt={product.name} />
               <h3>{product.name}</h3>
               <p>{product.price}</p>
-              <button className="shop-now-btn">Add to Cart</button>
+              <button className="add-to-cart-btn">Add to Cart</button>
             </div>
           ))}
+        </div>
+      </section>
+      {/* ClientsCam Section */}
+      <section className="clients-cam">
+        <h2>Spotted!</h2>
+        <p className="clients-cam-text">Tag @biancabeauty to get featured</p>
+        <div className="gallery-container">
+          <button className="scroll-btn left-btn" onClick={() => scrollGallery('left')}>❮</button>
+          <div className="image-gallery">
+            <img src="/images/clientscam1.jpg" alt="Client 1" />
+            <img src="/images/clientscam0.jpg" alt="Client 2" />
+            <img src="/images/clientscam3.jpg" alt="Client 3" />
+            <img src="/images/clientscam2.jpg" alt="Client 4" />
+            <img src="/images/clientscam4.jpg" alt="Client 5" />
+            <img src="/images/clientscam5.jpg" alt="Client 6" />
+            <img src="/images/clientscam6.jpg" alt="Client 7" />
+          </div>
+          <button className="scroll-btn right-btn" onClick={() => scrollGallery('right')}>❯</button>
         </div>
       </section>
       {/* About Section */}
