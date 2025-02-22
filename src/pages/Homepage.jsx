@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from "react-router-dom"
 import { productsData } from '../productsData'
 import '../styles/Homepage.css';
 
@@ -73,6 +74,41 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      {/* Contact Section */}
+      <section className="contact-section">
+        <h2>Contact Us</h2>
+        <div className="contact-container">
+          {/* Contact Form */}
+          <form className="contact-form">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+
+          {/* Contact Details */}
+          <div className="contact-details">
+            <p>📞 +123 456 7890</p>
+            <p>✉️ contact@biancabeauty.com</p>
+            <div className="social-links">
+              <a href="#"><img src="/icons/facebook.svg" alt="Facebook" /></a>
+              <a href="#"><img src="/icons/instagram.svg" alt="Instagram" /></a>
+              <a href="#"><img src="/icons/twitter.svg" alt="Twitter" /></a>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation Links */}
+        <nav className="contact-nav">
+          <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
+          <li><NavLink to="/products" activeClassName="active">Products</NavLink></li>
+          <li><NavLink to="/cart" activeClassName="active">Cart</NavLink></li>
+        </nav>
+
+        {/* Brand Name */}
+        <p className="brand-name">Bianca Beauty</p>
+      </section>
+
     </div>
   )
 }
