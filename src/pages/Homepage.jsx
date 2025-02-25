@@ -76,7 +76,8 @@ const Homepage = () => {
       </section>
       {/* Contact Section */}
       <section className="contact-section">
-        <h2>Contact Us</h2>
+        <hr />
+      {/* <p className="brand-name">Bianca Beauty</p> */}
         <div className="contact-container">
           {/* Contact Form */}
           <form className="contact-form">
@@ -91,22 +92,26 @@ const Homepage = () => {
             <p>📞 +123 456 7890</p>
             <p>✉️ contact@biancabeauty.com</p>
             <div className="social-links">
-              <a href="#"><img src="/icons/facebook.svg" alt="Facebook" /></a>
-              <a href="#"><img src="/icons/instagram.svg" alt="Instagram" /></a>
-              <a href="#"><img src="/icons/twitter.svg" alt="Twitter" /></a>
+              <a href="#"><i className="fab fa-facebook"></i></a>
+              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="#"><i className="fab fa-twitter"></i></a>
             </div>
           </div>
         </div>
 
         {/* Navigation Links */}
         <nav className="contact-nav">
-          <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
+          <li>
+            <NavLink to="/" activeClassName="active" onClick={() => window.scrollTo(0, 0)}>
+              Home
+            </NavLink></li>
           <li><NavLink to="/products" activeClassName="active">Products</NavLink></li>
           <li><NavLink to="/cart" activeClassName="active">Cart</NavLink></li>
         </nav>
 
         {/* Brand Name */}
         <p className="brand-name">Bianca Beauty</p>
+         
       </section>
 
     </div>

@@ -228,7 +228,7 @@
 
 /* Contact Section */
 .contact-section {
-  background-color: #fdeaf0;
+  background-color: #fff3fa;
   padding: 4rem 2rem;
   text-align: center;
   color: #7a042a;
@@ -328,7 +328,7 @@
 }
 
 /* Brand Name */
-.brand-name {
+.brand-name{
   font-family: 'Gruppo', sans-serif;
   font-size: 12rem;
   margin-top: 1rem;
@@ -338,4 +338,7 @@
   border-radius: 10px;
   /* border: 1px none black; */
   background-color: #f8f7f8;
+}
+.contact-section hr{
+  height: 50px;
 }
