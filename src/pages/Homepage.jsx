@@ -76,44 +76,44 @@ const Homepage = () => {
       </section>
       {/* Contact Section */}
       <section className="contact-section">
-        <hr />
-      {/* <p className="brand-name">Bianca Beauty</p> */}
-        <div className="contact-container">
-          {/* Contact Form */}
-          <form className="contact-form">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
+        {/* First Column: Subscription */}
+        <div className="contact-subscription">
+          <h3>Join the Bianca Beauty Club</h3>
+          <form className="subscription-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
           </form>
-
-          {/* Contact Details */}
-          <div className="contact-details">
-            <p>📞 +123 456 7890</p>
-            <p>✉️ contact@biancabeauty.com</p>
-            <div className="social-links">
-              <a href="#"><i className="fab fa-facebook"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-            </div>
-          </div>
+          <label className="consent-checkbox">
+            <input type="checkbox" /> I agree to receive promotional emails.
+          </label>
         </div>
 
-        {/* Navigation Links */}
-        <nav className="contact-nav">
-          <li>
-            <NavLink to="/" activeClassName="active" onClick={() => window.scrollTo(0, 0)}>
-              Home
-            </NavLink></li>
-          <li><NavLink to="/products" activeClassName="active">Products</NavLink></li>
-          <li><NavLink to="/cart" activeClassName="active">Cart</NavLink></li>
-        </nav>
+        {/* Second Column: Navigation Links */}
+        <div className="contact-nav">
+          <h3>Navigate</h3>
+          <nav>
+            <li>
+              <NavLink to="/" activeClassName="active" onClick={() => window.scrollTo(0, 0)}>
+                Home
+              </NavLink></li>
+            <li><NavLink to="/products" activeClassName="active">Products</NavLink></li>
+            <li><NavLink to="/cart" activeClassName="active">Cart</NavLink></li>
+          </nav>
+        </div>
 
-        {/* Brand Name */}
-        <p className="brand-name">Bianca Beauty</p>
-         
+        {/* Third Column: Contact Details */}
+        <div className="contact-info">
+          <h3>Contact</h3>
+          <p>Phone: +123 456 7890</p>
+          <p>Email: contact@biancabeauty.com</p>
+          <div className="social-links">
+            <a href="#"><i className="fab fa-facebook"></i></a>
+            <a href="#"><i className="fab fa-instagram"></i></a>
+            <a href="#"><i className="fab fa-twitter"></i></a>
+          </div>
+        </div>
       </section>
-
+      <div className="brand-name">Bianca Beauty</div>
     </div>
   )
 }
