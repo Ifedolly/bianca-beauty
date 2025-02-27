@@ -25,7 +25,7 @@ const Homepage = () => {
         <div className="hero-content">
           <h1>Welcome to Bianca Beauty</h1>
           <p>Enhance Your Beauty with Our Products</p>
-          <button className='hero-cta-btn'>Shop Now</button>
+          <Link to='/products' className='hero-cta-btn'>Shop Now</Link>
         </div>
       </section>
       {/* Featured Products Section */}
@@ -74,6 +74,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      <div className="brand-name">Bianca Beauty</div>
       {/* Contact Section */}
       <section className="contact-section">
         {/* First Column: Subscription */}
@@ -113,7 +114,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <div className="brand-name">Bianca Beauty</div>
+      
     </div>
   )
 }

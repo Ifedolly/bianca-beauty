@@ -164,7 +164,7 @@ export const productsData = [
       price: "$18",
       images: {
         default:"/images/caramel-foundation.jpg",
-        hover: "/images/nude-linerlip.jpg",
+        hover: "/images/foundation2.jpg",
       },
     },
     {
@@ -175,7 +175,7 @@ export const productsData = [
       price: "$18",
       images: {
         default:"/images/mocha-foundation.jpg",
-        hover: "/images/nude-linerlip.jpg",
+        hover: "/images/foundation2.jpg",
       },
     },
     {
@@ -186,7 +186,7 @@ export const productsData = [
       price: "$18",
       images: {
         default:"/images/bronzer.jpg",
-        hover: "/images/bronzer-hover.jpg",
+        hover: "/images/bronzer-hover.png",
       },
     },
     {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "../styles/Products.css"
-import { useCart } from '../CartContext';
+import { useContext } from "react";
+import { CartContext } from "../CartContext";
 import { productsData } from '../productsData';
 
 
@@ -11,7 +12,7 @@ const Products = () => {
   
   const [hoveredProduct, setHoveredProduct] = useState(null);
 
-  const { addToCart } = useCart()  //Gives access to addToCart function from context
+  const { addToCart } = useContext(CartContext)  //Gives access to addToCart function from context
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category)                              //Updates the selected category when clicked
