@@ -93,12 +93,22 @@ const Homepage = () => {
         <div className="contact-nav">
           <h3>Navigate</h3>
           <nav>
-            <li>
-              <NavLink to="/" activeClassName="active" onClick={() => window.scrollTo(0, 0)}>
-                Home
-              </NavLink></li>
-            <li><NavLink to="/products" activeClassName="active">Products</NavLink></li>
-            <li><NavLink to="/cart" activeClassName="active">Cart</NavLink></li>
+            <li><NavLink 
+                to="/" 
+                className={({ isActive }) => isActive ? "active-link" : ""} 
+                onClick={() => window.scrollTo(0, 0)}>
+                  Home
+                </NavLink></li>
+            <li><NavLink 
+                  to="/products" 
+                  className={({ isActive }) => isActive ? "active-link" : ""}>
+                    Products
+                </NavLink></li>
+            <li><NavLink 
+                  to="/cart" 
+                  className={({ isActive }) => isActive ? "active-link" : ""}>
+                    Cart
+                </NavLink></li>
           </nav>
         </div>
 

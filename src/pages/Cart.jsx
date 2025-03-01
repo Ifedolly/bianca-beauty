@@ -5,8 +5,13 @@ import "../styles/Cart.css";
 
 const Cart = () => {
   const { cart, increaseQuantity, decreaseQuantity, removeFromCart } = useContext(CartContext);
-  console.log(cart);
-  const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  
+  cart.forEach(item => console.log(`Item: ${item.name}, Price: ${item.price}, Quantity: ${item.quantity}`));
+  const totalPrice = cart.reduce((acc, item) => {
+    const price = Number(item.price) || 0;
+    const quantity = Number(item.quantity) || 0;
+    return acc + price * quantity;
+  }, 0);
 
   return (
     <div className="cart-page">
@@ -21,23 +26,22 @@ const Cart = () => {
               <img src={item.images.default} alt={item.name} />
               <div className="item-details">
                 <h3>{item.name}</h3>
-                <p>₦{item.price}</p>
+                <p>${item.price}</p>
 
                 <div className="quantity-controls">
                   <button onClick={() => decreaseQuantity(item.id)}>-</button>
                   <span>{item.quantity}</span>
                   <button onClick={() => increaseQuantity(item.id)}>+</button>
                 </div>
-
-                <button onClick={() => removeFromCart(item.id)}>Remove</button>
               </div>
+              <button onClick={() => removeFromCart(item.id)} className="remove-btn">Remove</button>
             </div>
           ))}
         </div>
       )}
 
       <div className="cart-footer">
-        <h3>Total: ₦{totalPrice}</h3>
+        <h3>Total: ${totalPrice}</h3>
         <button className="checkout-btn">Checkout</button>
         <Link to="/products" className="go-back-btn">Go Back to Products</Link>
       </div>

@@ -3,7 +3,8 @@ import "../styles/Products.css"
 import { useContext } from "react";
 import { CartContext } from "../CartContext";
 import { productsData } from '../productsData';
-
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('')  //Tracks the selected category
@@ -26,7 +27,22 @@ const Products = () => {
 
   const handleAddToCart = (product) => {
     addToCart(product);
-    alert(`${product.name} has been added to your cart!`);
+    toast.success(`${product.name} has been added to your cart!`, {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      style: {
+        background: "#white",
+        color: "#be5c71",
+        fontSize: "16px",
+        borderRadius: "10px",
+        padding: "12px",
+        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+      },
+    });
   }
 
   return (
@@ -73,7 +89,7 @@ const Products = () => {
                     />
                     <h3>{product.name}</h3>
                     <p>{product.description}</p>
-                    <p>{product.price}</p>
+                    <p>${product.price}</p>
 
                     {/* Add to Cart Button */}
                     <button onClick={() => handleAddToCart(product)} className="add-to-cart-button">

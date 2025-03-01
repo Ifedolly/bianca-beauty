@@ -24,9 +24,15 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className='logo'>Bianca Beauty</div>
       <ul className='nav-links'>
-        <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
-        <li><NavLink to="/products" activeClassName="active">Products</NavLink></li>
-        <li><NavLink to="/cart" activeClassName="active">Cart</NavLink></li>
+        <li><NavLink 
+              to="/" 
+              className={({ isActive }) => isActive ? "active-link" : ""}>Home</NavLink></li>
+        <li><NavLink 
+              to="/products" 
+              className={({ isActive }) => isActive ? "active-link" : ""}>Products</NavLink></li>
+        <li><NavLink 
+              to="/cart" 
+              className={({ isActive }) => isActive ? "active-link" : ""}>Cart</NavLink></li>
       </ul>
     </nav>
   )

@@ -5,19 +5,21 @@ import Navbar from './components/Navbar'
 import Homepage from './pages/Homepage';
 import Products from './pages/Products';
 import Cart from './pages/Cart';
+import { ToastContainer, Slide } from 'react-toastify';
 
 function App() {
   
   return (
     <CartProvider>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </Router>
+      <Router>
+        <ToastContainer transition={Slide} />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </Router>
     </CartProvider>
   )
 }

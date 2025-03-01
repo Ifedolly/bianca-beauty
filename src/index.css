@@ -9,6 +9,7 @@
 
 * {
     font-family: 'Urbanist', sans-serif;
+    
 }
 
 /* For Firefox */
@@ -17,22 +18,28 @@
     scrollbar-color: #be5c71 #fdeaf0; /* Thumb and track color */
   }
   
-  /* For Chrome, Safari, and Edge */
-  *::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
+/* For Chrome, Safari, and Edge */
+*::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+  
+*::-webkit-scrollbar-track {
+  background: #fdeaf0; /* Track background */
+  border-radius: 10px;
   }
   
-  *::-webkit-scrollbar-track {
-    background: #fdeaf0; /* Track background */
-    border-radius: 10px;
-  }
+*::-webkit-scrollbar-thumb {
+  background: #be5c71; /* Scrollbar thumb color */
+  border-radius: 10px;
+}
   
-  *::-webkit-scrollbar-thumb {
-    background: #be5c71; /* Scrollbar thumb color */
-    border-radius: 10px;
-  }
-  
-  *::-webkit-scrollbar-thumb:hover {
-    background: #8f4151; /* Darker thumb color on hover */
-  }
+*::-webkit-scrollbar-thumb:hover {
+  background: #8f4151; /* Darker thumb color on hover */
+}
+
+/* Change toast icon color */
+.Toastify__toast--success .Toastify__toast-icon svg {
+  fill: #be5c71 !important; 
+}
+
   
