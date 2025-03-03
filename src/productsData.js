@@ -35,6 +35,39 @@ export const productsData = [
     },
     {
       id: 4,
+      name: "Crimson Melt Lipstick",
+      category: "Lips",
+      description: "Bold maroon-red for a confident, striking look",
+      price: 15,
+      images: {
+        default:"/images/crimson-lipstick.jpg",
+        hover: "/images/crimson-lipstck-hover.jpg",
+      },
+    },
+    {
+      id: 5,
+      name: "Pink Truffle Lipstick",
+      category: "Lips",
+      description: " Soft nudish pink with a warm, effortless glow",
+      price: 15,
+      images: {
+        default:"/images/pink-truffle-lipstick.jpg",
+        hover: "/images/pink-truffle-lipstick-hover.jpg",
+      },
+    },
+    {
+      id: 5,
+      name: "Taupe Tempt Lipgloss",
+      category: "Lips",
+      description: "Timeless brownish gloss with a touch of sophistication",
+      price: 15,
+      images: {
+        default:"/images/brown-lipgloss.jpg",
+        hover: "/images/test.jpg",
+      },
+    },
+    {
+      id: 6,
       name: "Rose Glaze Gloss",
       category: "Lips",
       description: "Dewy pink gloss with a touch of rosy radiance",
@@ -45,7 +78,7 @@ export const productsData = [
       },
     },
     {
-      id: 5,
+      id: 7,
       name: "Honey Drip Gloss",
       category: "Lips",
       description: "Warm nude gloss as smooth as golden honey",
@@ -56,7 +89,7 @@ export const productsData = [
       },
     },
     {
-      id: 6,
+      id: 8,
       name: "Pink Haze",
       category: "Lips",
       description: "Soft, misty pink liner for a perfect pout",
@@ -67,7 +100,7 @@ export const productsData = [
       },
     },
     {
-      id: 7,
+      id: 9,
       name: "Latte Line",
       category: "Lips",
       description: "Rich brown liner for the ultimate natural contour",
@@ -78,7 +111,7 @@ export const productsData = [
       },
     },
     {
-      id: 8,
+      id: 10,
       name: "Mistique Toner",
       category: "Skin",
       description: "Restores, hydrates, and preps your skin",
@@ -90,7 +123,7 @@ export const productsData = [
       
     },
     {
-      id: 9,
+      id: 11,
       name: "LumiDew Serum",
       category: "Skin",
       description: "A potent boost of hydration and nourishment",
@@ -101,7 +134,7 @@ export const productsData = [
       },
     },
     {
-      id: 10,
+      id: 12,
       name: "PureMelt Cleanser",
       category: "Skin",
       description: "Gently melts away dirt, oil, and makeup",
@@ -113,7 +146,7 @@ export const productsData = [
       
     },
     {
-      id: 11,
+      id: 13,
       name: "Moisturiser",
       category: "Skin",
       description: "A refreshing burst of deep hydration",

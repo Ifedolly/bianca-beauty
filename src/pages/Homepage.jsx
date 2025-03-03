@@ -4,7 +4,7 @@ import { productsData } from '../productsData'
 import '../styles/Homepage.css';
 
 const featuredProducts = productsData.filter(product =>
-  [9, 11, 19, 20].includes(product.id)
+  [5, 11, 19, 20].includes(product.id)
 );
 
 const Homepage = () => {
@@ -36,7 +36,7 @@ const Homepage = () => {
             <div key={product.id} className="bestsellers-card">
               <img src={product.images.default} alt={product.name} />
               <h3>{product.name}</h3>
-              <p>{product.price}</p>
+              <p>${product.price}</p>
               <button className="add-to-cart-btn">Add to Cart</button>
             </div>
           ))}

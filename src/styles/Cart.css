@@ -14,6 +14,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
+    color: #7a042a;
   }
 
   .cart-items {
@@ -73,7 +74,7 @@ body {
   }
   
   .quantity-controls button:hover {
-    background: #444;
+    background-color: #8f4151;
   }
 
   .remove-btn{
