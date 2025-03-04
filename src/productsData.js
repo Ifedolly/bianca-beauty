@@ -169,13 +169,13 @@ export const productsData = [
     }, 
     {
       id: 13,
-      name: "Caramel Powder",
+      name: "Ivory Powder",
       category: "Skin",
       description: "A warm, golden-toned powder for a smooth finish",
       price: 25,
       images: {
-        default:"/images/caramel-powder.jpg",
-        hover: "/images/powder-hover.jpg",
+        default:"/images/ivory-powder.jpg",
+        hover: "/images/ivory-powder-hover.jpg",
       },
     },
     {
@@ -186,18 +186,18 @@ export const productsData = [
       price: 25,
       images: {
         default:"/images/mocha-powder.jpg",
-        hover: "/images/powder-hover.jpg",
+        hover: "/images/mocha3.jpg",
       },
     },
     {
       id: 15,
-      name: "Caramel Foundation",
+      name: "Ivory Foundation",
       category: "Skin",
       description: "A rich, warm hue that melts into the skin effortlessly",
       price: 18,
       images: {
-        default:"/images/caramel-foundation.jpg",
-        hover: "/images/foundation2.jpg",
+        default:"/images/ivory-foundation1.jpg",
+        hover: "/images/ivory-foundation-hover.jpg",
       },
     },
     {
@@ -208,7 +208,7 @@ export const productsData = [
       price: 18,
       images: {
         default:"/images/mocha-foundation.jpg",
-        hover: "/images/foundation2.jpg",
+        hover: "/images/mocha1.jpg",
       },
     },
     {
@@ -219,7 +219,7 @@ export const productsData = [
       price: 18,
       images: {
         default:"/images/bronzer.jpg",
-        hover: "/images/bronzer-hover.png",
+        hover: "/images/bronzer-hover.jpg",
       },
     },
     {
@@ -252,18 +252,18 @@ export const productsData = [
       price: 25,
       images: {
         default:"/images/ethereal-eyeshadow.jpg",
-        hover: "/images/nude-linerlip.jpg",
+        hover: "/images/ethereal-eyeshadow-hover.jpg",
       },
     },
     {
       id: 21,
-      name: "Bare Nude Palette",
+      name: "Rustic Veil Palette",
       category: "Eyes",
       description: "A timeless collection of neutral and earthy tones",
       price: 25,
       images: {
-        default:"/images/bare-eyeshadow.jpg",
-        hover: "/images/nude-linerlip.jpg",
+        default:"/images/rustic-eyeshadow.jpg",
+        hover: "/images/rustic-eyeshadow-hover.jpg",
       },
     },
   ]
