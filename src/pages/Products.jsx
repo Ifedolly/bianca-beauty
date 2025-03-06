@@ -51,17 +51,17 @@ const Products = () => {
       {/* Category divs (Image-based) */}
       {showCategories && (
         <div className="categories-container">
-          <div className="category-box" onClick={() => handleCategoryClick('Lips')}>
-            <img src="/images/lips-category.jpg" alt="Lips" className="category-image" />
-            <p className="category-text">Lips</p>
+          <div className="category-box" onClick={() => handleCategoryClick('Lip')}>
+            <img src="/images/lips-category.jpg" alt="Lip" className="category-image" />
+            <p className="category-text">Lip</p>
           </div>
           <div className="category-box" onClick={() => handleCategoryClick('Skin')}>
             <img src="/images/skin-category.jpg" alt="Skin" className="category-image" />
             <p className="category-text">Skin</p>
           </div>
-          <div className="category-box" onClick={() => handleCategoryClick('Eyes')}>
-            <img src="/images/eyes-category.jpg" alt="Eyes" className="category-image" />
-            <p className="category-text">Eyes</p>
+          <div className="category-box" onClick={() => handleCategoryClick('Eye')}>
+            <img src="/images/eyes-category.jpg" alt="Eye" className="category-image" />
+            <p className="category-text">Eye</p>
           </div>
         </div>
       )}

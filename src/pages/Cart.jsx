@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext";
 import "../styles/Cart.css";
 
 const Cart = () => {
-  const { cart, increaseQuantity, decreaseQuantity, removeFromCart } = useContext(CartContext);
+  const { cart, increaseQuantity, decreaseQuantity, removeFromCart, clearCart } = useContext(CartContext);
+  const [paymentSuccess, setPaymentSuccess] = useState(false);
   
   cart.forEach(item => console.log(`Item: ${item.name}, Price: ${item.price}, Quantity: ${item.quantity}`));
   const totalPrice = cart.reduce((acc, item) => {
@@ -12,6 +13,19 @@ const Cart = () => {
     const quantity = Number(item.quantity) || 0;
     return acc + price * quantity;
   }, 0);
+
+  const handleFakePayment = () => {
+    // if (cart.length === 0) {
+    //   setErrorMessage("Your cart is empty!");
+    //   return;
+    // }
+  
+    setTimeout(() => {
+      setPaymentSuccess(true);
+      clearCart();
+    }, 2000); // Simulate payment delay
+  };
+
 
   return (
     <div className="cart-page">
@@ -44,7 +58,12 @@ const Cart = () => {
         <h3>Total: ${totalPrice}</h3>
         
         <Link to="/products" className="go-back-btn">Go Back to Products</Link>
-        <button className="checkout-btn">Checkout</button>
+
+        {cart.length > 0 && !paymentSuccess && (
+          <button onClick={handleFakePayment} className="pay-now-btn">
+            Pay Now
+          </button>
+        )}
       </div>
     </div>
   );

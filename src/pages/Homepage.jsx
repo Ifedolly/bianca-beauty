@@ -1,13 +1,47 @@
 import React from 'react'
 import { Link, NavLink } from "react-router-dom"
+import { useContext } from "react";
+import { CartContext } from "../CartContext";
 import { productsData } from '../productsData'
 import '../styles/Homepage.css';
+import { toast } from "react-toastify";
 
 const featuredProducts = productsData.filter(product =>
-  [5, 11, 19, 20].includes(product.id)
+  [5, 6, 12, 14, 22].includes(product.id)
 );
 
 const Homepage = () => {
+
+  const { addToCart } = useContext(CartContext)  //Gives access to addToCart function from context
+
+  const handleAddToCart = (product) => {
+      addToCart(product);
+      toast.success(`${product.name} has been added to your cart!`, {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        style: {
+          background: "#white",
+          color: "#be5c71",
+          fontSize: "16px",
+          borderRadius: "10px",
+          padding: "12px",
+          boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+        },
+      });
+    }
+
+  const scrollBestsellers = (direction) => {
+    const gallery = document.querySelector('.bestsellers-container');
+    if (direction === 'left') {
+      gallery.scrollBy({ left: -200, behavior: 'smooth' });
+    } else {
+      gallery.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };
 
   const scrollGallery = (direction) => {
     const gallery = document.querySelector('.image-gallery');
@@ -24,23 +58,29 @@ const Homepage = () => {
       <section className='hero'>
         <div className="hero-content">
           <h1>Welcome to Bianca Beauty</h1>
-          <p>Enhance Your Beauty with Our Products</p>
+          <p>Your glow-up? Yeah, we’re on it.</p>
           <Link to='/products' className='hero-cta-btn'>Shop Now</Link>
         </div>
       </section>
       {/* Featured Products Section */}
       <section className="bestsellers">
         <h2>Bestsellers</h2>
-        <div className="bestsellers-container">
-          {featuredProducts.map((product) => (
-            <div key={product.id} className="bestsellers-card">
-              <img src={product.images.default} alt={product.name} />
-              <h3>{product.name}</h3>
-              <p>${product.price}</p>
-              <button className="add-to-cart-btn">Add to Cart</button>
-            </div>
-          ))}
-        </div>
+        <div className="bestsellers-gallery-container">
+        <button className="scroll-btn left-btn" onClick={() => scrollBestsellers('left')}>❮</button>
+          <div className="bestsellers-container">
+            {featuredProducts.map((product) => (
+              <div key={product.id} className="bestsellers-card">
+                <img src={product.images.default} alt={product.name} />
+                <h3>{product.name}</h3>
+                <p>${product.price}</p>
+                <button onClick={() => handleAddToCart(product)} className="add-to-cart-btn">
+                  Add to Cart
+                </button>
+              </div>
+            ))}
+          </div>
+          <button className="scroll-btn right-btn" onClick={() => scrollBestsellers('right')}>❯</button>
+        </div>  
       </section>
       {/* ClientsCam Section */}
       <section className="clients-cam">
@@ -50,12 +90,12 @@ const Homepage = () => {
           <button className="scroll-btn left-btn" onClick={() => scrollGallery('left')}>❮</button>
           <div className="image-gallery">
             <img src="/images/clientscam1.jpg" alt="Client 1" />
-            <img src="/images/clientscam0.jpg" alt="Client 2" />
+            <img src="/images/clientscam2.jpg" alt="Client 2" />
             <img src="/images/clientscam3.jpg" alt="Client 3" />
-            <img src="/images/clientscam2.jpg" alt="Client 4" />
-            <img src="/images/clientscam4.jpg" alt="Client 5" />
-            <img src="/images/clientscam5.jpg" alt="Client 6" />
-            <img src="/images/clientscam6.jpg" alt="Client 7" />
+            <img src="/images/clientscam4.jpg" alt="Client 4" />
+            <img src="/images/clientscam5.jpg" alt="Client 5" />
+            <img src="/images/clientscam6.jpg" alt="Client 6" />
+            <img src="/images/clientscam.jpg" alt="Client 7" />
           </div>
           <button className="scroll-btn right-btn" onClick={() => scrollGallery('right')}>❯</button>
         </div>

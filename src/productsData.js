@@ -3,7 +3,7 @@ export const productsData = [
     {
       id: 1,
       name: "Ruby Flame Lipstick",
-      category: "Lips",
+      category: "Lip",
       description: "Fierce, smoldering red that ignites confidence",
       price: 15,
       images: {
@@ -14,18 +14,18 @@ export const productsData = [
     {
       id: 2,
       name: "Fuschia Flair Lipstick",
-      category: "Lips",
+      category: "Lip",
       description: "Bold, playful, and bursting with vibrant pink energy",
       price: 15,
       images: {
-        default:"/images/pink-lipstick.jpg",
-        hover: "/images/pink-lipstick-hover.jpg",
+        default:"/images/fuschia-lipstick.jpg",
+        hover: "/images/fuschia-lipstick-hover.jpg",
       },
     },
     {
       id: 3,
       name: "Cocoa Cloud Lipstick",
-      category: "Lips",
+      category: "Lip",
       description: "Soft, dreamy nude for effortless elegance",
       price: 15,
       images: {
@@ -36,7 +36,7 @@ export const productsData = [
     {
       id: 4,
       name: "Crimson Melt Lipstick",
-      category: "Lips",
+      category: "Lip",
       description: "Bold maroon-red for a confident, striking look",
       price: 15,
       images: {
@@ -47,7 +47,7 @@ export const productsData = [
     {
       id: 5,
       name: "Pink Truffle Lipstick",
-      category: "Lips",
+      category: "Lip",
       description: " Soft nudish pink with a warm, effortless glow",
       price: 15,
       images: {
@@ -56,20 +56,20 @@ export const productsData = [
       },
     },
     {
-      id: 5,
+      id: 6,
       name: "Taupe Tempt Lipgloss",
-      category: "Lips",
+      category: "Lip",
       description: "Timeless brownish gloss with a touch of sophistication",
       price: 15,
       images: {
         default:"/images/brown-lipgloss.jpg",
-        hover: "/images/test.jpg",
+        hover: "/images/testgloss.jpg",
       },
     },
     {
-      id: 6,
+      id: 7,
       name: "Rose Glaze Gloss",
-      category: "Lips",
+      category: "Lip",
       description: "Dewy pink gloss with a touch of rosy radiance",
       price: 12,
       images: {
@@ -78,9 +78,9 @@ export const productsData = [
       },
     },
     {
-      id: 7,
+      id: 8,
       name: "Honey Drip Gloss",
-      category: "Lips",
+      category: "Lip",
       description: "Warm nude gloss as smooth as golden honey",
       price: 12,
       images: {
@@ -89,9 +89,9 @@ export const productsData = [
       },
     },
     {
-      id: 8,
+      id: 9,
       name: "Pink Haze",
-      category: "Lips",
+      category: "Lip",
       description: "Soft, misty pink liner for a perfect pout",
       price: 10,
       images: {
@@ -100,18 +100,18 @@ export const productsData = [
       },
     },
     {
-      id: 9,
+      id: 10,
       name: "Latte Line",
-      category: "Lips",
+      category: "Lip",
       description: "Rich brown liner for the ultimate natural contour",
       price: 10,
       images: {
-        default:"/images/nude-lipliner.jpg",
-        hover: "/images/nude-lipliner-hover.jpg",
+        default:"/images/brown-lipliner.jpg",
+        hover: "/images/brown-lipliner-hover.jpg",
       },
     },
     {
-      id: 10,
+      id: 11,
       name: "Mistique Toner",
       category: "Skin",
       description: "Restores, hydrates, and preps your skin",
@@ -123,7 +123,7 @@ export const productsData = [
       
     },
     {
-      id: 11,
+      id: 12,
       name: "LumiDew Serum",
       category: "Skin",
       description: "A potent boost of hydration and nourishment",
@@ -134,7 +134,7 @@ export const productsData = [
       },
     },
     {
-      id: 12,
+      id: 13,
       name: "PureMelt Cleanser",
       category: "Skin",
       description: "Gently melts away dirt, oil, and makeup",
@@ -146,7 +146,7 @@ export const productsData = [
       
     },
     {
-      id: 13,
+      id: 14,
       name: "Moisturiser",
       category: "Skin",
       description: "A refreshing burst of deep hydration",
@@ -157,7 +157,7 @@ export const productsData = [
       },
     },
     {
-      id: 12,
+      id: 15,
       name: "Blush Palette",
       category: "Skin",
       description: "A classic palette for a natural, youthful look",
@@ -168,7 +168,7 @@ export const productsData = [
       },
     }, 
     {
-      id: 13,
+      id: 16,
       name: "Ivory Powder",
       category: "Skin",
       description: "A warm, golden-toned powder for a smooth finish",
@@ -179,18 +179,18 @@ export const productsData = [
       },
     },
     {
-      id: 14,
+      id: 17,
       name: "Mocha Powder",
       category: "Skin",
       description: "A rich, deep brown powder for flawless, velvety coverage",
       price: 25,
       images: {
         default:"/images/mocha-powder.jpg",
-        hover: "/images/mocha3.jpg",
+        hover: "/images/mocha-powder-hover.jpg",
       },
     },
     {
-      id: 15,
+      id: 18,
       name: "Ivory Foundation",
       category: "Skin",
       description: "A rich, warm hue that melts into the skin effortlessly",
@@ -201,18 +201,18 @@ export const productsData = [
       },
     },
     {
-      id: 16,
+      id: 19,
       name: "Mocha Foundation",
       category: "Skin",
       description: "A deep, velvety brown for a flawless, sculpted finish",
       price: 18,
       images: {
         default:"/images/mocha-foundation.jpg",
-        hover: "/images/mocha1.jpg",
+        hover: "/images/mocha-foundation-hover.jpg",
       },
     },
     {
-      id: 17,
+      id: 20,
       name: "Velvet Bronze",
       category: "Skin",
       description: "Smooth, matte warmth for a soft, sculpted effect",
@@ -223,9 +223,9 @@ export const productsData = [
       },
     },
     {
-      id: 18,
+      id: 21,
       name: "Velash Mascara",
-      category: "Eyes",
+      category: "Eye",
       description: "Ultra-smooth, voluminous lashes with a velvety, weightless finish",
       price: 10,
       images: {
@@ -234,9 +234,9 @@ export const productsData = [
       },
     },
     {
-      id: 19,
+      id: 22,
       name: "Noir Flick Eyeliner",
-      category: "Eyes",
+      category: "Eye",
       description: "Intense black with a flawless wing every time",
       price: 10,
       images: {
@@ -245,9 +245,9 @@ export const productsData = [
       },
     },
     {
-      id: 20,
+      id: 23,
       name: "Ethereal Hues Palette",
-      category: "Eyes",
+      category: "Eye",
       description: "A chic and elegant palette with romantic hues",
       price: 25,
       images: {
@@ -256,9 +256,9 @@ export const productsData = [
       },
     },
     {
-      id: 21,
+      id: 24,
       name: "Rustic Veil Palette",
-      category: "Eyes",
+      category: "Eye",
       description: "A timeless collection of neutral and earthy tones",
       price: 25,
       images: {

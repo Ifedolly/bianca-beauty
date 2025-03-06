@@ -10,6 +10,10 @@ body {
     
   }
   
+.cart-page p{
+  font-size: 1.2rem;
+}
+
   .cart-page h2{
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -98,23 +102,23 @@ body {
     font-size: 1.5rem;
   }
   
-  .checkout-btn,
-  .go-back-btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 15px;
-    text-decoration: none;
-    background-color: #be5c71;
-    /* background: #000; */
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
+.pay-now-btn, 
+.go-back-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #be5c71;
+  /* background: #000; */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
   }
   
-  .checkout-btn:hover,
-  .go-back-btn:hover {
-    background-color: #8f4151;
-  }
+.pay-now-btn:hover,
+.go-back-btn:hover {
+  background-color: #8f4151;
+}
 
   
