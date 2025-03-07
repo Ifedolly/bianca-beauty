@@ -121,4 +121,8 @@ body {
   background-color: #8f4151;
 }
 
+.success-message {
+  margin-top: 10px;
+  font-size: 16px;
+}
   

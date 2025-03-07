@@ -196,7 +196,7 @@ export const productsData = [
       description: "A rich, warm hue that melts into the skin effortlessly",
       price: 18,
       images: {
-        default:"/images/ivory-foundation1.jpg",
+        default:"/images/ivory-foundation.jpg",
         hover: "/images/ivory-foundation-hover.jpg",
       },
     },

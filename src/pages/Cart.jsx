@@ -53,6 +53,8 @@ const Cart = () => {
           ))}
         </div>
       )}
+      
+      {paymentSuccess && <p className="success-message">Payment successful! Thank you for your purchase.</p>}
 
       <div className="cart-footer">
         <h3>Total: ${totalPrice}</h3>
