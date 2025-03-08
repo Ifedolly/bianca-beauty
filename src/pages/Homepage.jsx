@@ -90,12 +90,19 @@ const Homepage = () => {
           <button className="scroll-btn left-btn" onClick={() => scrollGallery('left')}>❮</button>
           <div className="image-gallery">
             <img src="/images/clientscam1.jpg" alt="Client 1" />
-            <img src="/images/clientscam2.jpg" alt="Client 2" />
-            <img src="/images/clientscam3.jpg" alt="Client 3" />
-            <img src="/images/clientscam4.jpg" alt="Client 4" />
-            <img src="/images/clientscam5.jpg" alt="Client 5" />
-            <img src="/images/clientscam6.jpg" alt="Client 6" />
-            <img src="/images/clientscam.jpg" alt="Client 7" />
+            <img src="/images/clientscam9.jpg" alt="Client 2" />
+            <img src="/images/clientscam8.jpg" alt="Client 3" />
+            <img src="/images/clientscam6.jpg" alt="Client 4" />
+            <img src="/images/clientscam7.jpg" alt="Client 5" />
+            <img src="/images/clientscam12.jpg" alt="Client 6" />
+            <img src="/images/clientscam0.jpg" alt="Client 7" />
+            <img src="/images/clientscam4.jpg" alt="Client 8" />
+            <img src="/images/clientscam14.jpg" alt="Client 9" />
+            <img src="/images/clientscam10.jpg" alt="Client 10" />
+            <img src="/images/clientscam11.jpg" alt="Client 11" />
+            <img src="/images/clientscam3.jpg" alt="Client 12" />
+            <img src="/images/clientscam13.jpg" alt="Client 13" />
+            <img src="/images/clientscam5.jpg" alt="Client 14" />
           </div>
           <button className="scroll-btn right-btn" onClick={() => scrollGallery('right')}>❯</button>
         </div>

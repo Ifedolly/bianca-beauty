@@ -1,12 +1,19 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext";
+import { usePaystackPayment } from "react-paystack"; 
 import "../styles/Cart.css";
 
 const Cart = () => {
   const { cart, increaseQuantity, decreaseQuantity, removeFromCart, clearCart } = useContext(CartContext);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   
+  useEffect(() => {
+    if (paymentSuccess) {
+      clearCart();
+    }
+  }, [paymentSuccess]); // Clears cart after payment success updates
+
   cart.forEach(item => console.log(`Item: ${item.name}, Price: ${item.price}, Quantity: ${item.quantity}`));
   const totalPrice = cart.reduce((acc, item) => {
     const price = Number(item.price) || 0;
@@ -14,17 +21,25 @@ const Cart = () => {
     return acc + price * quantity;
   }, 0);
 
-  const handleFakePayment = () => {
-    // if (cart.length === 0) {
-    //   setErrorMessage("Your cart is empty!");
-    //   return;
-    // }
-  
-    setTimeout(() => {
-      setPaymentSuccess(true);
-      clearCart();
-    }, 2000); // Simulate payment delay
+
+  const config = {
+    reference: new Date().getTime().toString(),
+    email: "test@example.com", 
+    amount: totalPrice * 100, 
+    publicKey: "pk_test_6f3487f2fec76a3070ff279b810e1759491b7619", 
   };
+
+  const onSuccess = (reference) => {
+    console.log("Payment Successful!", reference);
+    setPaymentSuccess(true);
+    clearCart();
+  };
+
+  const onClose = () => {
+    console.log("Payment Closed");
+  };
+
+  const initializePayment = usePaystackPayment(config);
 
 
   return (
@@ -54,18 +69,18 @@ const Cart = () => {
         </div>
       )}
       
-      {paymentSuccess && <p className="success-message">Payment successful! Thank you for your purchase.</p>}
-
       <div className="cart-footer">
         <h3>Total: ${totalPrice}</h3>
         
         <Link to="/products" className="go-back-btn">Go Back to Products</Link>
 
         {cart.length > 0 && !paymentSuccess && (
-          <button onClick={handleFakePayment} className="pay-now-btn">
+          <button onClick={() => initializePayment(onSuccess, onClose)} className="pay-now-btn">
             Pay Now
           </button>
         )}
+
+        {paymentSuccess && <p className="success-message">Payment Successful! 🎉</p>}
       </div>
     </div>
   );
