@@ -228,19 +228,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 4rem 5%;
   background-color: #fff3fa;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about-container{
   display: flex;
   align-items: center;
-  max-width: 900px;
+  max-width: 1000px;
   gap: 2rem;
+  width: 100%;
 }
 
-.about-image{
-  width: 350px;
+.about-image {
+  width: 350px; /* Ensure width and height are equal */
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
@@ -248,18 +251,45 @@
 
 .about-text{
   max-width: 500px;
-  padding-left: 4rem;
+  padding-left: 0;
 }
 
 .about-text h2{
   font-size: 2.5rem;
   margin-bottom: 1.4rem;
   color: #8b0d35;
+  text-align: left;
 }
 
 .about-text p {
   font-size: 1.2rem;
   color: #3f3d3d;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .about-text {
+    padding-left: 0;
+    max-width: 90%;
+  }
+
+  .about-text h2 {
+    font-size: 45px;
+  } 
+
+  .about-text p {
+    font-size: 18px;
+  } 
+
+  .about-text h2, .about-text p {
+    text-align: center;
+  }
 }
 
 /* Contact Section */
@@ -398,3 +428,45 @@
   background-color: #fff7fa;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    align-items: center;
+  }
+
+  .contact-subscription {
+    max-width: 400px;
+  }
+
+  /* Columns 2 & 3 side by side */
+  .contact-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .contact-nav,
+  .contact-info {
+    width: 45%;
+    text-align: left;
+  }
+
+  /* Reduce overall font size */
+
+  .contact-section h3 {
+    font-size: 16px;
+  }
+
+  .contact-nav a,
+  .contact-info p {
+    font-size: 13px;
+  }
+
+  .social-links a {
+    font-size: 16px;
+  }
+  .brand-name{
+    font-size: 80px;
+  }
+}

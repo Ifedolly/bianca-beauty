@@ -1,18 +1,18 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext";
-import { usePaystackPayment } from "react-paystack"; 
 import "../styles/Cart.css";
 
 const Cart = () => {
   const { cart, increaseQuantity, decreaseQuantity, removeFromCart, clearCart } = useContext(CartContext);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   
-  useEffect(() => {
-    if (paymentSuccess) {
-      clearCart();
-    }
-  }, [paymentSuccess]); // Clears cart after payment success updates
+  // useEffect(() => {
+  //   if (paymentSuccess) {
+  //     clearCart();
+  //     console.log("Cart cleared after successful payment!");
+  //   }
+  // }, [paymentSuccess]); // Clears cart after payment success updates
 
   cart.forEach(item => console.log(`Item: ${item.name}, Price: ${item.price}, Quantity: ${item.quantity}`));
   const totalPrice = cart.reduce((acc, item) => {
@@ -22,25 +22,18 @@ const Cart = () => {
   }, 0);
 
 
-  const config = {
-    reference: new Date().getTime().toString(),
-    email: "test@example.com", 
-    amount: totalPrice * 100, 
-    publicKey: "pk_test_6f3487f2fec76a3070ff279b810e1759491b7619", 
+  const handlePayment = () => {
+    console.log("Payment Successful!");
+    clearCart(); 
+    setPaymentSuccess(true); // Show success message
   };
 
-  const onSuccess = (reference) => {
-    console.log("Payment Successful!", reference);
-    setPaymentSuccess(true);
-    clearCart();
-  };
-
-  const onClose = () => {
-    console.log("Payment Closed");
-  };
-
-  const initializePayment = usePaystackPayment(config);
-
+  // const onSuccess = (reference) => {
+  //   console.log("✅ Payment Successful!", reference);
+  //   console.log("Cart before clearing:", cart);
+  //   clearCart();  
+  //   console.log("🧹 Cart should be cleared now:", cart);
+  // };
 
   return (
     <div className="cart-page">
@@ -74,8 +67,8 @@ const Cart = () => {
         
         <Link to="/products" className="go-back-btn">Go Back to Products</Link>
 
-        {cart.length > 0 && !paymentSuccess && (
-          <button onClick={() => initializePayment(onSuccess, onClose)} className="pay-now-btn">
+        {cart.length > 0 && (
+          <button onClick={handlePayment} className="pay-now-btn">
             Pay Now
           </button>
         )}

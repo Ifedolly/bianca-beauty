@@ -5,6 +5,8 @@ import "../styles/Navbar.css"
 const Navbar = () => {
 
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
+
 
   useEffect(() => {
    const handleScroll = () => {
@@ -21,15 +23,25 @@ const Navbar = () => {
   }, []);
 
   const handleNavClick = (targetPath) => {
-    if (pathname === targetPath) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    setMenuOpen(false); // Close menu when a link is clicked
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    document.body.style.overflowX = menuOpen ? "auto" : "hidden"; // Prevent horizontal scroll
   };
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className='logo'>Bianca Beauty</div>
-      <ul className='nav-links'>
+
+      {/* Toggle Menu Icon */}
+      <div className="menu-icon" onClick={toggleMenu}>
+        {menuOpen ? '✖' : '☰'} {/* Changes ☰ to ✖ when opened */}
+      </div>
+
+      <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li>
           <NavLink 
             to="/" 

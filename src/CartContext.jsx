@@ -54,6 +54,8 @@ export const CartProvider = ({ children }) => {
   // **Function to clear the cart**
   const clearCart = () => {
     setCart([]); // This resets the cart to an empty array
+    localStorage.removeItem("cart"); // Also clear localStorage
+    console.log("Cart has been cleared!", cart);
   };
 
   return (
