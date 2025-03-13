@@ -78,14 +78,6 @@
 .back-button:hover {
     background-color: #8f4151;
 }
-  
-  
-@media (max-width: 768px) {
-    .categories-container {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-}
 
 .products-grid{
     display: grid;
@@ -142,4 +134,22 @@
 
 .add-to-cart-button:hover {
     background-color: #8f4151;
+}
+
+@media (max-width: 768px) {
+    .categories-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .category-box {
+        width: 250px;
+        height: 250px;
+    }
+
+    .Toastify__toast {
+        font-size: 14px; /* Reduce font size */
+        padding: 8px; /* Adjust padding */
+        min-height: 40px; /* Reduce height */
+    }
 }

@@ -6,13 +6,6 @@ import "../styles/Cart.css";
 const Cart = () => {
   const { cart, increaseQuantity, decreaseQuantity, removeFromCart, clearCart } = useContext(CartContext);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
-  
-  // useEffect(() => {
-  //   if (paymentSuccess) {
-  //     clearCart();
-  //     console.log("Cart cleared after successful payment!");
-  //   }
-  // }, [paymentSuccess]); // Clears cart after payment success updates
 
   cart.forEach(item => console.log(`Item: ${item.name}, Price: ${item.price}, Quantity: ${item.quantity}`));
   const totalPrice = cart.reduce((acc, item) => {
@@ -27,13 +20,6 @@ const Cart = () => {
     clearCart(); 
     setPaymentSuccess(true); // Show success message
   };
-
-  // const onSuccess = (reference) => {
-  //   console.log("✅ Payment Successful!", reference);
-  //   console.log("Cart before clearing:", cart);
-  //   clearCart();  
-  //   console.log("🧹 Cart should be cleared now:", cart);
-  // };
 
   return (
     <div className="cart-page">

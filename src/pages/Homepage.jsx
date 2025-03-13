@@ -7,7 +7,7 @@ import '../styles/Homepage.css';
 import { toast } from "react-toastify";
 
 const featuredProducts = productsData.filter(product =>
-  [5, 6, 12, 14, 22].includes(product.id)
+  [5, 13, 12, 14, 22].includes(product.id)
 );
 
 const Homepage = () => {
@@ -57,7 +57,7 @@ const Homepage = () => {
                   {/* Hero Section */}
       <section className='hero'>
         <div className="hero-content">
-          <h1>Welcome to Bianca Beauty</h1>
+          <h1>Welcome to <br/> Bianca Beauty</h1>
           <p>Your glow-up? Yeah, we’re on it.</p>
           <Link to='/products' className='hero-cta-btn'>Shop Now</Link>
         </div>
@@ -135,43 +135,43 @@ const Homepage = () => {
             <input type="checkbox" /> I agree to receive promotional emails.
           </label>
         </div>
+        <div className="contact-bottom">
+          {/* Second Column: Navigation Links */}
+          <div className="contact-nav">
+            <h3>Navigate</h3>
+            <nav>
+              <li><NavLink 
+                  to="/" 
+                  className={({ isActive }) => isActive ? "active-link" : ""} 
+                  onClick={() => window.scrollTo(0, 0)}>
+                    Home
+                  </NavLink></li>
+              <li><NavLink 
+                    to="/products" 
+                    className={({ isActive }) => isActive ? "active-link" : ""}>
+                      Products
+                  </NavLink></li>
+              <li><NavLink 
+                    to="/cart" 
+                    className={({ isActive }) => isActive ? "active-link" : ""}>
+                      Cart
+                  </NavLink></li>
+            </nav>
+          </div>
 
-        {/* Second Column: Navigation Links */}
-        <div className="contact-nav">
-          <h3>Navigate</h3>
-          <nav>
-            <li><NavLink 
-                to="/" 
-                className={({ isActive }) => isActive ? "active-link" : ""} 
-                onClick={() => window.scrollTo(0, 0)}>
-                  Home
-                </NavLink></li>
-            <li><NavLink 
-                  to="/products" 
-                  className={({ isActive }) => isActive ? "active-link" : ""}>
-                    Products
-                </NavLink></li>
-            <li><NavLink 
-                  to="/cart" 
-                  className={({ isActive }) => isActive ? "active-link" : ""}>
-                    Cart
-                </NavLink></li>
-          </nav>
-        </div>
-
-        {/* Third Column: Contact Details */}
-        <div className="contact-info">
-          <h3>Contact</h3>
-          <p>Phone: +123 456 7890</p>
-          <p>Email: contact@biancabeauty.com</p>
-          <div className="social-links">
-            <a href="#"><i className="fab fa-facebook"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
+          {/* Third Column: Contact Details */}
+          <div className="contact-info">
+            <h3>Contact</h3>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: contact@biancabeauty.com</p>
+            <div className="social-links">
+              <a href="#"><i className="fab fa-facebook"></i></a>
+              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="#"><i className="fab fa-twitter"></i></a>
+            </div>
           </div>
         </div>
       </section>
-      
     </div>
   )
 }

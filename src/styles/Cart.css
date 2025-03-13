@@ -125,4 +125,44 @@ body {
   margin-top: 10px;
   font-size: 16px;
 }
+
+@media (max-width:768px) {
+
+  .cart-page h2{
+    font-size: 2.2rem;
+  }
+
+  .cart-page p{
+    font-size: 1rem;
+  }
+
+  .item-details h3{
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .remove-btn{
+    font-size: .8rem;
+  }
+
+  .quantity-controls button {
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .pay-now-btn, 
+  .go-back-btn {
+    font-size: .9rem;
+    margin: 10px;
+    padding: 8px 10px;
+  }
+
+  .cart-footer h3{
+    font-size: 1.2rem;
+  }
+  
+  .success-message {
+    font-size: 14px;
+  }
+}
   

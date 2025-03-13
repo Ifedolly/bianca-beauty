@@ -42,17 +42,10 @@
   background-color: #e0435f;
 }
 
-/* @media (max-width: 768px) {
-  .hero-content{
-    
-  } 
-} */
-
 /* Bestsellers Section */
 .bestsellers {
   text-align: center;
   padding: 4rem 2rem;
-  /* background-color: #f4efe6; */
   background-color: #fff3fa;
   color: #7a042a;
 }
@@ -103,7 +96,6 @@
 .bestsellers-card img {
   width: 100%;
   height: 180px;
-  /* border-radius: 5px; */
   object-fit: cover;
 }
 
@@ -138,6 +130,7 @@
 
 .add-to-cart-btn {
   background-color: #be5c71;
+  background-color: #da7e92;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -243,7 +236,7 @@
 }
 
 .about-image {
-  width: 350px; /* Ensure width and height are equal */
+  width: 350px; 
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
@@ -265,31 +258,6 @@
   font-size: 1.2rem;
   color: #3f3d3d;
   text-align: left;
-}
-
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-  }
-  
-  .about-text {
-    padding-left: 0;
-    max-width: 90%;
-  }
-
-  .about-text h2 {
-    font-size: 45px;
-  } 
-
-  .about-text p {
-    font-size: 18px;
-  } 
-
-  .about-text h2, .about-text p {
-    text-align: center;
-  }
 }
 
 /* Contact Section */
@@ -339,7 +307,6 @@
   padding: 8px 15px;
   border: none;
   cursor: pointer;
-  /* border-radius: 5px; */
 }
 
 .subscription-form button:hover {
@@ -354,7 +321,6 @@
   accent-color: #be5c71;
 }
 
-
 .contact-subscription h3, .contact-nav h3, .contact-info h3 {
   font-size: 1.5rem;
   color: #7a042a;
@@ -364,14 +330,12 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
-  /* text-align: center; */
 }
 
 .contact-nav nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start; 
-  /* text-align: left; */
 }
 
 .contact-nav li {
@@ -418,6 +382,13 @@
   height: 30px;
 }
 
+.contact-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  width: 100%;
+}
+
 .brand-name {
   font-family: 'Gruppo', sans-serif;
   font-size: 6rem;
@@ -428,14 +399,114 @@
   background-color: #fff7fa;
 }
 
-/* Responsive */
+/* Responsiveness */
+
+@media (max-width: 1024px) {
+
+  /* Hero Section */
+  
+  .hero {
+    background-image: url('/images/hi3.jpg'); 
+    background-size: contain; 
+    background-position: center;
+    /* background-repeat: no-repeat; */
+  }
+}
+
 @media (max-width: 768px) {
+
+  /* Hero Section */
+  
+  .hero {
+    background-image: url('/images/hi3.jpg'); 
+    background-size: contain; 
+    background-position: center;
+    /* background-repeat: no-repeat; */
+  }
+  .hero h1 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero-cta-btn {
+    font-size: 17px;
+  }
+
+  /* Bestsellers Section */
+
+  .bestsellers-card {
+    min-width: 230px;
+  }  
+  .bestsellers h2{
+    font-size: 28px;
+  }
+  .bestsellers-card h3 {
+    font-size: 18px;
+  }
+  
+  .bestsellers-card p {
+    font-size: 14px;
+  }
+
+  /* Clients-cam Section */
+  .clients-cam h2 {
+    font-size: 28px;
+  }
+  
+  .clients-cam-text {
+    font-size: 15px;
+  }
+
+  /* About Section */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .about-image {
+    width: 250px; 
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  .about-text {
+    padding-left: 0;
+    max-width: 90%;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  } 
+
+  .about-text p {
+    font-size: 15px;
+  } 
+
+  .about-text h2, .about-text p {
+    text-align: center;
+  }
+
+  /* Contact Section */
   .contact-section {
     align-items: center;
   }
 
   .contact-subscription {
-    max-width: 400px;
+    max-width: 600px;
+  }
+
+  .subscription-form input{
+    width: 150px;
+    max-width: 80%;
+  }
+
+  .consent-checkbox{
+    font-size: 12px;
   }
 
   /* Columns 2 & 3 side by side */
@@ -452,21 +523,158 @@
     text-align: left;
   }
 
-  /* Reduce overall font size */
-
+  /* Font size reduction */
   .contact-section h3 {
     font-size: 16px;
   }
 
   .contact-nav a,
   .contact-info p {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .social-links a {
     font-size: 16px;
   }
   .brand-name{
-    font-size: 80px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* Hero Section */
+  
+  .hero {
+    background-image: url('/images/hi3.jpg'); 
+    background-size: cover; 
+    background-position: center;
+  }
+  .hero h1 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero-cta-btn {
+    font-size: 17px;
+  }
+
+  /* Bestsellers Section */
+
+  .bestsellers-card {
+    min-width: 230px;
+  }  
+  .bestsellers h2{
+    font-size: 28px;
+  }
+  .bestsellers-card h3 {
+    font-size: 18px;
+  }
+  
+  .bestsellers-card p {
+    font-size: 14px;
+  }
+
+  /* Clients-cam Section */
+  .clients-cam h2 {
+    font-size: 28px;
+  }
+  
+  .clients-cam-text {
+    font-size: 15px;
+  }
+
+  /* About Section */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .about-image {
+    width: 250px; 
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  .about-text {
+    padding-left: 0;
+    max-width: 90%;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  } 
+
+  .about-text p {
+    font-size: 15px;
+  } 
+
+  .about-text h2, .about-text p {
+    text-align: center;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    align-items: center;
+  }
+
+  .contact-subscription {
+    max-width: 600px;
+  }
+
+  .subscription-form input{
+    width: 150px;
+    max-width: 80%;
+  }
+
+  .consent-checkbox{
+    font-size: 12px;
+  }
+
+  /* Columns 2 & 3 side by side */
+  .contact-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .contact-nav,
+  .contact-info {
+    width: 45%;
+    text-align: left;
+  }
+
+  /* Font size reduction */
+  .contact-section h3 {
+    font-size: 16px;
+  }
+
+  .contact-nav a,
+  .contact-info p {
+    font-size: 11px;
+  }
+
+  .social-links a {
+    font-size: 16px;
+  }
+  .brand-name{
+    font-size: 40px;
+  }
+}
+
+/* 🔹 Small Phones (Below 425px) */
+
+@media (max-width: 425px) {
+
+  /* Hero Section */
+  .hero{
+    justify-content: center;
+    text-align: center;
   }
 }
