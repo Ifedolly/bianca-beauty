@@ -24,7 +24,6 @@
 
 .hero p {
   font-size: 1.3rem;
-  /* margin: 16px 0; */
   margin: 15px 0 18px 0;
 }
 
@@ -81,7 +80,6 @@
 
 .bestsellers-card {
   min-width: 250px;
-  /* height: 300px; */
   padding: 15px;
   border-radius: 8px;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -134,7 +132,6 @@
   color: white;
   border: none;
   padding: 0.5rem 1rem;
-  /* border-radius: 5px; */
   cursor: pointer;
   font-size: 0.9rem;
   margin-top: 1rem;
@@ -216,7 +213,6 @@
   right: 0;
 }
 
-
 .about-section{
   display: flex;
   justify-content: center;
@@ -236,8 +232,8 @@
 }
 
 .about-image {
-  width: 350px; 
-  height: 350px;
+  width: 330px; 
+  height: 330px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -294,7 +290,6 @@
   flex: 1;
   padding: 8px;
   border: 1px solid #be5c71;
-  /* border-radius: 5px; */
   width: 250px; 
   max-width: 100%;
   flex-grow: 0; 
@@ -346,7 +341,6 @@
 
 .contact-nav a {
   text-decoration: none;
-  /* color: #7a042a; */
   color: #333131;
 }
 
@@ -394,8 +388,15 @@
   font-size: 6rem;
   text-align: center;
   font-weight: bold;
-  /* color: #7a042a; */
   color: #970f3a;
+  background-color: #fff7fa;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: #777; 
+  text-align: center;
+  margin-top: 15px;
   background-color: #fff7fa;
 }
 
@@ -409,7 +410,6 @@
     background-image: url('/images/hi3.jpg'); 
     background-size: contain; 
     background-position: center;
-    /* background-repeat: no-repeat; */
   }
 }
 
@@ -421,8 +421,8 @@
     background-image: url('/images/hi3.jpg'); 
     background-size: contain; 
     background-position: center;
-    /* background-repeat: no-repeat; */
   }
+  
   .hero h1 {
     font-size: 35px;
     font-weight: bold;

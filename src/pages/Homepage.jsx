@@ -172,6 +172,10 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      {/* Disclaimer */}
+      <p className="disclaimer">
+        All images in this project are for educational and portfolio purposes only. No copyright infringement intended.
+      </p>
     </div>
   )
 }
