@@ -39,7 +39,7 @@ const Products = () => {
         color: "#be5c71",
         fontSize: "16px",
         borderRadius: "10px",
-        padding: "12px",
+        padding: "12px" ,
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
       },
     });
