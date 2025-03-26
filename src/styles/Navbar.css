@@ -18,13 +18,16 @@
 }
 
 .navbar:hover{
-    background-color: #fff5f5;
+    /* background-color: #fff5f5; */
+    background-color: #fffbfb;
 }
 
 .navbar.scrolled{
-    background-color: #fff5f5;
+    /* background-color: #fff5f5; */
+    background-color: #fffbfb;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 @font-face {
     font-family: 'Gruppo';
     src: url('../assets/fonts/Gruppo-Regular.ttf') format('truetype');
@@ -90,6 +93,12 @@
 @media (max-width: 768px) {
     .menu-icon {
         display: block; /* Show ☰ icon */
+    }
+
+    .icon-style {
+        font-size: 24px; 
+        color: #7a042a; 
+        cursor: pointer;
     }
 
     .nav-links {

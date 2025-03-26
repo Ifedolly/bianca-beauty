@@ -1,5 +1,6 @@
 .homepage{
-  background-color: #fff3fa;
+  /* background-color: #fff3fa; */
+  background-color: #fff5f5 ;
 }
 .hero{
   height: 70vh;
@@ -45,7 +46,7 @@
 .bestsellers {
   text-align: center;
   padding: 4rem 2rem;
-  background-color: #fff3fa;
+  /* background-color: #fff3fa; */
   color: #7a042a;
 }
 
@@ -128,7 +129,7 @@
 
 .add-to-cart-btn {
   background-color: #be5c71;
-  background-color: #da7e92;
+  /* background-color: #da7e92; */
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -145,7 +146,7 @@
 .clients-cam {
   text-align: center;
   padding: 3rem 2rem;
-  background-color: #fff3fa;
+  /* background-color: #fff3fa; */
 }
 
 .clients-cam h2 {
@@ -218,7 +219,7 @@
   justify-content: center;
   align-items: center;
   padding: 4rem 5%;
-  background-color: #fff3fa;
+  /* background-color: #fff3fa; */
   width: 100%;
   box-sizing: border-box;
 }
@@ -256,6 +257,17 @@
   text-align: left;
 }
 
+/* Brand Name */
+.brand-name {
+  font-family: 'Gruppo', sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: bold;
+  color: #970f3a;
+  /* background-color: #fff7fa; */
+  background-color: #ffffff;
+}
+
 /* Contact Section */
 .contact-section {
   display: flex;
@@ -263,7 +275,7 @@
   align-items: flex-start; 
   gap: 20px; 
   padding: 40px 20px;
-  background-color: #fdeff6;
+  /* background-color: #fdeff6; */
   flex-wrap: wrap; 
 }
 
@@ -383,21 +395,12 @@
   width: 100%;
 }
 
-.brand-name {
-  font-family: 'Gruppo', sans-serif;
-  font-size: 6rem;
-  text-align: center;
-  font-weight: bold;
-  color: #970f3a;
-  background-color: #fff7fa;
-}
-
 .disclaimer {
-  font-size: 14px;
+  font-size: 13px;
   color: #777; 
   text-align: center;
-  margin-top: 15px;
-  background-color: #fff7fa;
+  margin-top: 8px;
+  /* background-color: #fff7fa; */
 }
 
 /* Responsiveness */
@@ -412,134 +415,9 @@
   }
 }
 
+
+
 @media (max-width: 768px) {
-
-  /* Hero Section */
-  
-  .hero {
-    background-size: cover; 
-    background-position: center;
-  }
-  
-  .hero h1 {
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .hero p {
-    font-size: 20px;
-  }
-
-  .hero-cta-btn {
-    font-size: 17px;
-  }
-
-  /* Bestsellers Section */
-
-  .bestsellers-card {
-    min-width: 230px;
-  }  
-  .bestsellers h2{
-    font-size: 28px;
-  }
-  .bestsellers-card h3 {
-    font-size: 18px;
-  }
-  
-  .bestsellers-card p {
-    font-size: 14px;
-  }
-
-  /* Clients-cam Section */
-  .clients-cam h2 {
-    font-size: 28px;
-  }
-  
-  .clients-cam-text {
-    font-size: 15px;
-  }
-
-  /* About Section */
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
-  }
-  
-  .about-image {
-    width: 250px; 
-    height: 250px;
-    border-radius: 50%;
-  }
-
-  .about-text {
-    padding-left: 0;
-    max-width: 90%;
-  }
-
-  .about-text h2 {
-    font-size: 28px;
-  } 
-
-  .about-text p {
-    font-size: 15px;
-  } 
-
-  .about-text h2, .about-text p {
-    text-align: center;
-  }
-
-  /* Contact Section */
-  .contact-section {
-    align-items: center;
-  }
-
-  .contact-subscription {
-    max-width: 600px;
-  }
-
-  .subscription-form input{
-    width: 150px;
-    max-width: 80%;
-  }
-
-  .consent-checkbox{
-    font-size: 12px;
-  }
-
-  /* Columns 2 & 3 side by side */
-  .contact-bottom {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .contact-nav,
-  .contact-info {
-    width: 45%;
-    text-align: left;
-  }
-
-  /* Font size reduction */
-  .contact-section h3 {
-    font-size: 16px;
-  }
-
-  .contact-nav a,
-  .contact-info p {
-    font-size: 11px;
-  }
-
-  .social-links a {
-    font-size: 16px;
-  }
-  .brand-name{
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 767px) {
 
   /* Hero Section */
   

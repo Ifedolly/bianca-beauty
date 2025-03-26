@@ -1,6 +1,7 @@
 
 body {
-  background-color: #fff3fa;
+  /* background-color: #fff3fa; */
+  background-color: #fffaf4;
 }
 
 .cart-page {
@@ -31,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff8fa;
+    background: #fffcfd;
     padding: 15px;
     border-radius: 8px;
   }

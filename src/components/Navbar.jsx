@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, NavLink } from "react-router-dom"
+import { HiOutlineBars3 } from "react-icons/hi2";
+import { IoCloseOutline } from "react-icons/io5";
 import "../styles/Navbar.css"
 
 const Navbar = () => {
@@ -35,10 +37,10 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className='logo'>Bianca Beauty</div>
-
+      
       {/* Toggle Menu Icon */}
       <div className="menu-icon" onClick={toggleMenu}>
-        {menuOpen ? '✖' : '☰'} {/* Changes ☰ to ✖ when opened */}
+        {menuOpen ? <IoCloseOutline className='icon-style' /> : <HiOutlineBars3 className='icon-style' /> }
       </div>
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
