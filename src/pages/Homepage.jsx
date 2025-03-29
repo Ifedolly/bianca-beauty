@@ -7,7 +7,7 @@ import '../styles/Homepage.css';
 import { toast } from "react-toastify";
 
 const featuredProducts = productsData.filter(product =>
-  [5, 13, 12, 14, 22].includes(product.id)
+  [6, 13, 12, 14, 21].includes(product.id)
 );
 
 const Homepage = () => {
